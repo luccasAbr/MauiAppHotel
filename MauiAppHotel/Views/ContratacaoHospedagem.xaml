@@ -24,7 +24,7 @@
                            Text="Adultos:" />
 
                     <Label Grid.Row="0" Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="Red"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
 
@@ -38,7 +38,7 @@
                            Text="Crianças:" />
 
                     <Label Grid.Row="1" Grid.Column="1"
-                           TextColor="{StaticResource Primary}"
+                           TextColor="Red"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -55,11 +55,18 @@
                         <Label Text="Escolha sua Suíte"
                                TextTransform="Uppercase"
                                FontSize="Subtitle"
-                               TextColor="{StaticResource Primary}"/>
+                               TextColor="Red"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
                     </VerticalStackLayout>
+                </Frame>
+                
+                <Frame Padding="10" Margin="10">
+
+                    <Button Text="Descrição das suítes" Clicked="Button_Clicked_2"/>
+
                 </Frame>
 
                 <Frame Padding="10"
@@ -69,11 +76,12 @@
                         <Label Text="Período da Estadia"
                                TextTransform="Uppercase"
                                FontSize="Subtitle"
-                               TextColor="{StaticResource Primary}"/>
+                               TextColor="Red"/>
 
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
@@ -85,13 +93,18 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar"/>
-                
                 <Frame Padding="10" Margin="10">
 
-                    <Button Text="Sobre" Clicked="Button_Clicked"/>
+                    <Button Text="Avançar" Clicked="Button_Clicked"   />
 
                 </Frame>
+
+                <Frame Padding="10" Margin="10">
+
+                    <Button Text="Sobre o App" HorizontalOptions="Center" Clicked="Button_Clicked_1"/>
+
+                </Frame>
+
 
             </VerticalStackLayout>
         </Frame>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.DescricaoSuites"
+             Title="DescricaoSuites"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- Suíte 1 -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Suíte Super Luxo" 
+                   FontSize="22" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" 
+                   TextColor="Red" />
+
+                <Label Text="O melhor que nós podemos oferecer! O maior quarto, com sacada, sauna e banheira. Café da manha, almoço e janta inclusos."
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Suíte 2 -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Suíte Luxo" 
+                   FontSize="22" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" 
+                   TextColor="Red" />
+
+                <Label Text="O mais querido! com banheira aquecida e uma ótima vista da sacada, você vai aproveitar muito sem gastar tanto! Café e almoço inclusos."
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Suíte 3 -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Suíte Single" 
+                   FontSize="22" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" 
+                   TextColor="Red" />
+
+                <Label Text="Para os solitários, essa suíte te deixa a vontade consigo mesmo, com um espaço aconchegante e café dá manhã por nossa conta!"
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+
+            <!-- Suíte 4 -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Suíte Crise" 
+                   FontSize="22" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" 
+                   TextColor="Red" />
+
+                <Label Text="Quando o bolso ta meio apertado, mas ainda sim você merece conforto! Bom para passar a noite, te garantimos uma ótima experiência, mesmo que passageira!"
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+    
+            <Button Text="Voltar" HorizontalOptions="Center" Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
